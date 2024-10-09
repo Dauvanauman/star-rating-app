@@ -84,3 +84,11 @@ body {
   font-size: 34px;
   font-weight: 800;
 }
+
+.star-rating-container{
+  max-width: 700px;
+  margin-inline: auto;
+  background: linear-gradient(red green);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+box-shadow: 0px 0px 10px 5px magenta;
+}

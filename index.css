@@ -1,0 +1,86 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: center;
+  border-bottom: 5px dotted gray;
+}
+.header h1 {
+  color: rgb(22, 22, 22);
+}
+
+.star-rating-container {
+  max-width: 600px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.star-text p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+.imogy {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+.imogi-cotainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imogi-cotainer p {
+  margin: 10px;
+}
+.imogi-cotainer p + p {
+  font-size: 34px;
+  font-weight: 800;
+}
